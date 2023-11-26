@@ -1,13 +1,29 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* src/styles/tailwind.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+hr{
+  border: 0.5px solid rgba(169, 169, 169, 0.438);
+  border-radius: 50px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+
+.navBtns button{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    /* font-weight: bold; */
+    color: rgb(127, 127, 127);
+    background-color: transparent;
+    outline: none;
+    user-select: none;
+    height: 80px;
+    border: none;
+    transition: color 0.2s ease-in-out;
+  };
+  
+  .navBtns button:hover, .navBtns button:focus{
+    cursor: pointer;
+    color: rgb(15, 210, 210);
+  }

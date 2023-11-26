@@ -1,0 +1,36 @@
+.navDropdown button:hover + [class*="DropdownMenu"],
+.navDropdown button:focus + [class*="DropdownMenu"],
+.navDropdown button + [class*="DropdownMenu"]:hover{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.navDropdown button + [class*="DropdownMenu"]{
+  visibility: hidden;
+}
+
+.navDropdown{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  gap: 1rem;
+}
+.aboutDropdownMenu, .serviceDropdownMenu{
+  left: 0%;
+  top: 100%;
+  position: absolute;
+  padding: 0px 15px 15px 15px;
+  border: solid rgb(239, 239, 239);
+  background-color: white;
+  border-top-color: white;
+  box-shadow: 0px 4px 4px 1px rgb(217, 217, 217);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.1s ease-in-out,
+              transform 0.1s ease-in-out;
+  z-index: 2;
+  h3{
+    color:rgb(127, 127, 127);
+  }
+}

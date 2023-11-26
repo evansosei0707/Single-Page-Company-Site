@@ -1,0 +1,21 @@
+
+.reasonCards:first-child {
+    transition-delay: 0s;
+}
+
+.reasonCards:nth-child(2) {
+    transition-delay: 0.25s;
+}
+.reasonCards:nth-child(3) {
+    transition-delay: 0.5s;
+}
+.reasonCards:last-child {
+    transition-delay: 0.75s;
+}
+
+.fadeIn .card {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+
